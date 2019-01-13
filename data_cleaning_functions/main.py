@@ -7,7 +7,7 @@ from splitRatings import splitRatings
 from modifyQuotationMarks import modifyQuotationMarks
 from appendTagNum import appendTagNum
 
-with open('../data_test.csv', 'r', encoding='utf-8',) as csvfile:
+with open('../data_test.csv', 'r', encoding='utf-8') as csvfile:
     lines = csv.DictReader(csvfile)
     all_data = list(lines)
 

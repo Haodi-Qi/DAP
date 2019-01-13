@@ -11,7 +11,7 @@ def categorizeTitle(title):
     category = ""
     determinants = ['Who', 'What', 'When', 'Where',
                     'Why', 'How', 'Does', 'Do', 'Did', 'Have']
-    title = title.capitalize()
+    title = title[1:-1].capitalize()
 
     if title.split()[0] in determinants:
         category = "question"
@@ -20,7 +20,9 @@ def categorizeTitle(title):
     else:
         category = "statement"
         if title[-1] != ".":
-            title += '.'
+            title += "."
+
+    title = "\"" + title + "\""
 
     return category, title
 
