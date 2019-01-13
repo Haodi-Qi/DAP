@@ -3,7 +3,7 @@ import ast
 
 def modifyQuotationMarks(all_data):
     '''
-    this function modifies the format of some fields so that the values can be written
+    this function modifies the format of description, related_talks and tags so that the values can be written
     in the csv file in one single cell, by replacing all "" with ''
     '''
     for row in all_data:
@@ -26,3 +26,6 @@ def modifyQuotationMarks(all_data):
 
         row['title'] = "\"" + \
             row['title'].replace("\"", "\'") + "\""
+
+        row['main_speaker'] = "\"" + \
+            row['main_speaker'].replace("\"", "\'") + "\""
