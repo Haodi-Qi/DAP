@@ -10,12 +10,10 @@ def modifyQuotationMarks(all_data):
         row['description'] = "\"" + \
             row['description'].replace("\"", "\'") + "\""
 
-        related_talks = str(ast.literal_eval(
-            row['related_talks'])).replace("\"", "\'")
+        related_talks = row['related_talks'].replace("\"", "\'")
         row['related_talks'] = "\"" + related_talks + "\""
 
-        tags = str(ast.literal_eval(
-            row['tags'])).replace("\"", "\'")
+        tags = row['tags'].replace("\"", "\'")
         row['tags'] = "\"" + tags + "\""
 
         row['name'] = "\"" + \
