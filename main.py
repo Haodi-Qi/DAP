@@ -38,3 +38,12 @@ with open('processed_data.csv', 'w', encoding='utf-8') as updatedFile:
             data += str(value) + ','
         data = data[:-1] + "\n"
         updatedFile.write(data)
+
+# #convert csv to xlsx workbook
+#from openpyxl import Workbook
+# wb =Workbook()
+# ws = wb.active
+# with open('processed_data.csv', 'r',encoding='utf-8') as f:
+#     for row in csv.reader(f):
+#         ws.append(row)
+# wb.save('processed_data.xlsx')
