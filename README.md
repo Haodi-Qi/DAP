@@ -1,10 +1,10 @@
 # Talk-Like-TED
-This project started in Jan 2019, as part of the Data Associate Programme in SMU Business Intelligence Analytics. 
+This project started in Jan 2019, as part of the Data Associate Programme in SMU Business Intelligence Analytics.<br>
 The main contributors are Fabian Toh, Qi Haodi, and Tan Kin Meng. 
 
 The project involves analysis on Ted Talk data (more than 2400 rows of data/TED talks). The data is available in Kaggle: https://www.kaggle.com/rounakbanik/ted-talks
 
-There are two main types of analysis we carried out: Statistical Analysis on the metadata and Text Analysis on the transcript
+There are two main types of analysis we carried out: Statistical Analysis on the metadata and Text Analysis on the transcript. The detailed hypothesis and analysis are in the respective notebooks. 
 
 <h2> Statistical Analysis </h2>
 
